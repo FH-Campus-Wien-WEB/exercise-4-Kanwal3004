@@ -168,6 +168,17 @@ window.onload = function () {
       // Task 1.2: Render a user greeting to `#userGreeting` 
       // using `firstName`, `lastName`, and the server-provided
       // login timestamp.
+
+    const date = new Date(currentSession.loginTime);
+
+    const formattedDate = date.toLocaleDateString("de-DE");
+    const formattedTime = date.toLocaleTimeString("de-DE", {
+      hour: "2-digit",
+      minute: "2-digit"
+    });
+
+    greetingElement.textContent = `Hi ${currentSession.firstName} ${currentSession.lastName}, du hast dich am ${formattedDate} um ${formattedTime} angemeldet.`;
+
     } else {
       greetingElement.textContent = messages.loggedOutGreeting;
     }
@@ -215,6 +226,34 @@ window.onload = function () {
     // Task 1.1: Implement the login submit flow to call `POST /login` 
     // with username and password, handle errors, save the response 
     // into `currentSession`, then call `updateUI()` and `loadMovies()`.
+
+    fetch("/login", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json"
+      },
+      body: JSON.stringify({
+        username: formData.get("username"),
+        password: formData.get("password")
+      })
+    })
+    .then(response => {
+      if (!response.ok) {
+        throw new Error("Login fehlgeschlagen");
+      }
+      return response.json();
+    })
+    .then(data => {
+      currentSession = data;
+
+      document.querySelector("dialog").close();
+
+      updateUI();
+      loadMovies();
+    })
+    .catch(error => {
+      alert(error.message);
+    });
 
   });
 
