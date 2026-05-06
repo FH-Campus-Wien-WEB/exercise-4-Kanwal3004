@@ -83,12 +83,13 @@ function loadMovies(genre) {
     });
 }
 
-function addMovie(imdbID) {
+function addMovie(imdbID, container) {
   fetch(`/movies/${imdbID}`, { method: 'PUT' })
     .then(response => {
       if (response.status === 201) {
         // Task 2.2: Make sure to remove the added movie from the search results to avoid
         // giving the user the option to add it again.
+        container.element.remove();
     
         loadMovies();
         updateGenres();
@@ -137,6 +138,31 @@ function searchMovies(query) {
       // include an "Add" button for each result that calls `addMovie(imdbID)` when clicked.
       // There is a second part to this task, in `addMovie`
 
+      if (results.length === 0) {
+        new ElementBuilder("p")
+          .text("Keine Filme gefunden")
+          .appendTo(resultsDiv);
+        return;
+      }
+
+    results.forEach(movie => {
+      const container = new ElementBuilder("div");
+      container
+        .append(
+          new ElementBuilder("span")
+            .text(`${movie.Title} (${movie.Year})`)
+        )
+
+        .append(
+          new ElementBuilder("button")
+            .text("Add")
+            .listener("click", () => {
+              addMovie(movie.imdbID, container);
+            })
+        )
+    .appendTo(resultsDiv);
+    });
+
     })
     .catch(error => {
       console.error('Search failed:', error);
@@ -171,7 +197,11 @@ window.onload = function () {
 
     const date = new Date(currentSession.loginTime);
 
-    const formattedDate = date.toLocaleDateString("de-DE");
+    const formattedDate = date.toLocaleDateString("de-DE", {
+      day: "numeric",
+      month: "long",
+      year: "numeric"
+    });
     const formattedTime = date.toLocaleTimeString("de-DE", {
       hour: "2-digit",
       minute: "2-digit"

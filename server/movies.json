@@ -1,30 +1,5 @@
 {
   "joe": {
-    "tt0399295": {
-      "imdbID": "tt0399295",
-      "Title": "Lord of War",
-      "Released": "2005-09-15",
-      "Runtime": 122,
-      "Genres": [
-        "Crime",
-        "Drama"
-      ],
-      "Directors": [
-        "Andrew Niccol"
-      ],
-      "Writers": [
-        "Andrew Niccol"
-      ],
-      "Actors": [
-        "Nicolas Cage",
-        "Ethan Hawke",
-        "Jared Leto"
-      ],
-      "Plot": "An arms dealer confronts the morality of his work as he is being chased by an INTERPOL Agent.",
-      "Poster": "https://m.media-amazon.com/images/M/MV5BNThlY2NkYmMtNTFhNi00MzBiLWJmNzEtZjk5MzYwYWU2MjllXkEyXkFqcGc@._V1_SX300.jpg",
-      "Metascore": 62,
-      "imdbRating": 7.6
-    },
     "tt0167260": {
       "imdbID": "tt0167260",
       "Title": "The Lord of the Rings: The Return of the King",
@@ -53,11 +28,123 @@
       "Metascore": 94,
       "imdbRating": 9
     },
+    "tt0077869": {
+      "imdbID": "tt0077869",
+      "Title": "The Lord of the Rings",
+      "Year": 1978,
+      "Runtime": 132,
+      "Released": "15 Nov 1978",
+      "Plot": "The Fellowship of the Ring embark on a journey to destroy the One Ring and end Sauron's reign over Middle-earth.",
+      "Poster": "https://m.media-amazon.com/images/M/MV5BZmI4ZmIxOGQtMGY2ZS00Y2Y5LTllMDItYzllOWFmMTNlMmY2XkEyXkFqcGc@._V1_SX300.jpg",
+      "Genres": [
+        "Animation",
+        "Adventure",
+        "Fantasy"
+      ],
+      "Directors": [
+        "Ralph Bakshi"
+      ],
+      "Writers": [
+        "Chris Conkling",
+        "Peter S. Beagle",
+        "J.R.R. Tolkien"
+      ],
+      "Actors": [
+        "Christopher Guard",
+        "William Squire",
+        "Michael Scholes"
+      ]
+    },
+    "tt0120737": {
+      "imdbID": "tt0120737",
+      "Title": "The Lord of the Rings: The Fellowship of the Ring",
+      "Year": 2001,
+      "Runtime": 178,
+      "Released": "19 Dec 2001",
+      "Plot": "A meek Hobbit from the Shire and eight companions set out on a journey to destroy the powerful One Ring and save Middle-earth from the Dark Lord Sauron.",
+      "Poster": "https://m.media-amazon.com/images/M/MV5BNzIxMDQ2YTctNDY4MC00ZTRhLTk4ODQtMTVlOWY4NTdiYmMwXkEyXkFqcGc@._V1_QL75_UX380_CR0,1,380,562_.jpg",
+      "Genres": [
+        "Adventure",
+        "Drama",
+        "Fantasy"
+      ],
+      "Directors": [
+        "Peter Jackson"
+      ],
+      "Writers": [
+        "J.R.R. Tolkien",
+        "Fran Walsh",
+        "Philippa Boyens"
+      ],
+      "Actors": [
+        "Elijah Wood",
+        "Ian McKellen",
+        "Orlando Bloom"
+      ]
+    },
+    "tt0110357": {
+      "imdbID": "tt0110357",
+      "Title": "The Lion King",
+      "Year": 1994,
+      "Runtime": 88,
+      "Released": "24 Jun 1994",
+      "Plot": "Lion prince Simba and his father are targeted by his bitter uncle, who wants to ascend the throne himself.",
+      "Poster": "https://m.media-amazon.com/images/M/MV5BZGRiZDZhZjItM2M3ZC00Y2IyLTk3Y2MtMWY5YjliNDFkZTJlXkEyXkFqcGc@._V1_SX300.jpg",
+      "Genres": [
+        "Animation",
+        "Adventure",
+        "Drama"
+      ],
+      "Directors": [
+        "Roger Allers",
+        "Rob Minkoff"
+      ],
+      "Writers": [
+        "Irene Mecchi",
+        "Jonathan Roberts",
+        "Linda Woolverton"
+      ],
+      "Actors": [
+        "Matthew Broderick",
+        "Jeremy Irons",
+        "James Earl Jones"
+      ]
+    },
+    "tt6105098": {
+      "imdbID": "tt6105098",
+      "Title": "The Lion King",
+      "Year": 2019,
+      "Runtime": 118,
+      "Released": "19 Jul 2019",
+      "Plot": "After the murder of his father, a young lion prince flees his kingdom only to learn the true meaning of responsibility and bravery.",
+      "Poster": "https://m.media-amazon.com/images/M/MV5BMjIwMjE1Nzc4NV5BMl5BanBnXkFtZTgwNDg4OTA1NzM@._V1_SX300.jpg",
+      "Genres": [
+        "Animation",
+        "Adventure",
+        "Drama"
+      ],
+      "Directors": [
+        "Jon Favreau"
+      ],
+      "Writers": [
+        "Jeff Nathanson",
+        "Irene Mecchi",
+        "Jonathan Roberts"
+      ],
+      "Actors": [
+        "Donald Glover",
+        "Beyoncé",
+        "Seth Rogen"
+      ]
+    },
     "tt0057261": {
       "imdbID": "tt0057261",
       "Title": "Lord of the Flies",
-      "Released": "1963-08-12",
+      "Year": 1963,
       "Runtime": 92,
+      "Released": "13 Aug 1963",
+      "Plot": "Schoolboys marooned on a Pacific island create their own savage civilization.",
+      "Poster": "https://m.media-amazon.com/images/M/MV5BY2RiOTM0ZDgtNDRlMi00MDMzLWI1NDYtY2NjZDM4YTkwNWVlXkEyXkFqcGc@._V1_SX300.jpg",
       "Genres": [
         "Adventure",
         "Drama",
@@ -74,11 +161,7 @@
         "James Aubrey",
         "Tom Chapin",
         "Hugh Edwards"
-      ],
-      "Plot": "Schoolboys marooned on a Pacific island create their own savage civilization.",
-      "Poster": "https://m.media-amazon.com/images/M/MV5BY2RiOTM0ZDgtNDRlMi00MDMzLWI1NDYtY2NjZDM4YTkwNWVlXkEyXkFqcGc@._V1_SX300.jpg",
-      "Metascore": 67,
-      "imdbRating": 6.9
+      ]
     }
   },
   "jane": {
@@ -110,34 +193,6 @@
       "Metascore": 41,
       "imdbRating": 6.7
     },
-    "tt0360717": {
-      "imdbID": "tt0360717",
-      "Title": "King Kong",
-      "Released": "2005-12-13",
-      "Runtime": 187,
-      "Genres": [
-        "Action",
-        "Adventure",
-        "Romance"
-      ],
-      "Directors": [
-        "Peter Jackson"
-      ],
-      "Writers": [
-        "Fran Walsh",
-        "Philippa Boyens",
-        "Peter Jackson"
-      ],
-      "Actors": [
-        "Naomi Watts",
-        "Jack Black",
-        "Adrien Brody"
-      ],
-      "Plot": "A greedy film producer assembles a team of moviemakers and sets out for the infamous Skull Island, where they find more than just cannibalistic natives.",
-      "Poster": "https://m.media-amazon.com/images/M/MV5BMWY0NWE0ZjUtNjRlOS00ZDViLTgxNTQtMGMwN2FhNDY1YTg2XkEyXkFqcGc@._V1_SX300.jpg",
-      "Metascore": 81,
-      "imdbRating": 7.2
-    },
     "tt0110357": {
       "imdbID": "tt0110357",
       "Title": "The Lion King",
@@ -166,6 +221,109 @@
       "Poster": "https://m.media-amazon.com/images/M/MV5BZGRiZDZhZjItM2M3ZC00Y2IyLTk3Y2MtMWY5YjliNDFkZTJlXkEyXkFqcGc@._V1_SX300.jpg",
       "Metascore": 88,
       "imdbRating": 8.5
+    },
+    "tt0360717": {
+      "imdbID": "tt0360717",
+      "Title": "King Kong",
+      "Year": 2005,
+      "Runtime": 187,
+      "Released": "14 Dec 2005",
+      "Plot": "A greedy film producer assembles a team of moviemakers and sets out for the infamous Skull Island, where they find more than just cannibalistic natives.",
+      "Poster": "https://m.media-amazon.com/images/M/MV5BMWY0NWE0ZjUtNjRlOS00ZDViLTgxNTQtMGMwN2FhNDY1YTg2XkEyXkFqcGc@._V1_SX300.jpg",
+      "Genres": [
+        "Action",
+        "Adventure",
+        "Romance"
+      ],
+      "Directors": [
+        "Peter Jackson"
+      ],
+      "Writers": [
+        "Fran Walsh",
+        "Philippa Boyens",
+        "Peter Jackson"
+      ],
+      "Actors": [
+        "Naomi Watts",
+        "Jack Black",
+        "Adrien Brody"
+      ]
+    },
+    "tt0091344": {
+      "imdbID": "tt0091344",
+      "Title": "King Kong Lives",
+      "Year": 1986,
+      "Runtime": 105,
+      "Released": "19 Dec 1986",
+      "Plot": "Kong falls from the Twin Towers, and he appears to be alive, but his heart is failing, so it's replaced with an artificial one. All is well until he senses that there's a female Kong somewhere out there and escapes wreaking havoc.",
+      "Poster": "https://m.media-amazon.com/images/M/MV5BYjJlZjI4YjMtZGY4ZS00Y2IwLWEyOGEtODkyOTA0OWEyOWU3XkEyXkFqcGc@._V1_SX300.jpg",
+      "Genres": [
+        "Action",
+        "Adventure"
+      ],
+      "Directors": [
+        "John Guillermin",
+        "Charles McCracken"
+      ],
+      "Writers": [
+        "Ronald Shusett",
+        "Steven Pressfield",
+        "Merian C. Cooper"
+      ],
+      "Actors": [
+        "Brian Kerwin",
+        "Linda Hamilton",
+        "Peter Elliott"
+      ]
+    },
+    "tt0923752": {
+      "imdbID": "tt0923752",
+      "Title": "The King of Kong: A Fistful of Quarters",
+      "Year": 2007,
+      "Runtime": 79,
+      "Released": "28 Feb 2008",
+      "Plot": "Die-hard gamers compete to break world records on classic arcade games.",
+      "Poster": "https://m.media-amazon.com/images/M/MV5BM2RmNGM4YWItNDIzMS00OGQ5LTkyOGQtNTc1MGZkZTM0MDIwXkEyXkFqcGc@._V1_SX300.jpg",
+      "Genres": [
+        "Documentary",
+        "Biography",
+        "Sport"
+      ],
+      "Directors": [
+        "Seth Gordon"
+      ],
+      "Writers": [
+        "Seth Gordon"
+      ],
+      "Actors": [
+        "Steve Wiebe",
+        "Billy Mitchell",
+        "Mark Alpiger"
+      ]
+    },
+    "tt0061523": {
+      "imdbID": "tt0061523",
+      "Title": "A Countess from Hong Kong",
+      "Year": 1967,
+      "Runtime": 120,
+      "Released": "15 Mar 1967",
+      "Plot": "In Hong Kong, an ambassador returning to America meets a Russian countess, a refugee without a passport, who decides to hide in his cabin.",
+      "Poster": "https://m.media-amazon.com/images/M/MV5BNjA5MTY2ZmYtYmRjNi00NzQ5LTgzZmItMjdkNjBmZTdmNGI0XkEyXkFqcGc@._V1_SX300.jpg",
+      "Genres": [
+        "Comedy",
+        "Romance"
+      ],
+      "Directors": [
+        "Charles Chaplin"
+      ],
+      "Writers": [
+        "Charles Chaplin"
+      ],
+      "Actors": [
+        "Marlon Brando",
+        "Sophia Loren",
+        "Sydney Chaplin"
+      ]
     }
   }
 }

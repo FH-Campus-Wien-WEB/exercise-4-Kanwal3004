@@ -100,6 +100,64 @@ app.put("/movies/:imdbID", requireLogin, function (req, res) {
     // Task 2.3: Fetch the movie data from OmdbAPI, follow the pattern used further down 
     // in the GET /search endpoint. Implement conversion of the OmdbAPI response to the 
     // movie format used in the frontend. Make sure to handle errors and timeouts properly.
+  const url =
+    `http://www.omdbapi.com/?i=${imdbID}&apikey=${config.omdbApiKey}`;
+
+  const controller = new AbortController();
+
+  const timeoutId = setTimeout(() => controller.abort(), config.omdbTimeoutMs);
+
+  fetch(url, { signal: controller.signal })
+    .then(apiRes => {
+      clearTimeout(timeoutId);
+      if (!apiRes.ok) {
+        return res.sendStatus(apiRes.status);
+      }
+      return apiRes.json();
+    })
+
+    .then(data => {
+      if (!data || data.Response === "False") {
+        return res.sendStatus(404);
+      }
+
+    const movie = {
+      imdbID: data.imdbID,
+      Title: data.Title,
+      Year: parseInt(data.Year) || null,
+      Runtime: parseInt(data.Runtime) || 0,
+      Released: data.Released,
+      Plot: data.Plot,
+      Poster: data.Poster,
+      Genres:
+        data.Genre ? data.Genre.split(", ") : [],
+      Directors:
+        data.Director ? data.Director.split(", ") : [],
+      Writers:
+        data.Writer ? data.Writer.split(", ") : [],
+      Actors:
+        data.Actors ? data.Actors.split(", ") : []
+    };
+
+    movieModel.setUserMovie(
+      username,
+      imdbID,
+      movie
+    );
+
+    res.sendStatus(201);
+  })
+
+  .catch(err => {
+    clearTimeout(timeoutId);
+    if (err.name === "AbortError") {
+      return res.sendStatus(504);
+    }
+    console.error("OMDb fetch error:", err);
+    res.sendStatus(500);
+  });
+
+
   } else {
     movieModel.setUserMovie(username, imdbID, req.body);
     res.sendStatus(200);
